@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
   }
 
   //this is the default if the requesting content doesn't exist
-  //html response: Note:use object literal for multiline comment
+  //html response: Note:use object literal for multiline string
   res.end(`
   <h1>oops!!</h1>
   <p>this page doesn't exist</p>
