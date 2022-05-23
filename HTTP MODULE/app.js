@@ -1,16 +1,13 @@
 const http = require("http");
 
-// req- it's the request from the clients
-// res- it's the response we send
-/* createServer()-as you guessed 
-it , it's the method to create a 
-server present in the http 
-module and it takes 
-a callback function as it's arguemnt those
-arguemnts are request and response 
-*/
 const server = http.createServer((req, res) => {
-  res.write("welcome to our homepage");
+  // this is used to know the endpoint/adress the client is requesting
+  if (req.url == "/") {
+    // this is used to send user data on the webpage
+    res.write("welcome to our homepage");
+  }
+
+  // we have end the server, after serving so the security isn't compromised
   res.end();
 });
 
