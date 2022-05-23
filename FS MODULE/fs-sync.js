@@ -12,5 +12,6 @@ writeFileSync(
   "../CONTENT/result.txt",
   `
 here is the result text file : ${first}  ${second}
-`
+`,
+  { flag: "a" } //use this flag to append the string to the already existent file
 );
