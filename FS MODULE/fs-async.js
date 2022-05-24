@@ -25,3 +25,5 @@ readFile("../CONTENT/first.txt", "utf-8", (err, result) => {
     );
   });
 });
+// i implemented everything inside call backs to use the variables,because once i leave the callback functions
+// scope i no longer could access the result, first or the second variable
